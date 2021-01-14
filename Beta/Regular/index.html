@@ -1,0 +1,143 @@
+<html>
+<body>
+
+<link rel="shortcut icon" href=""/>
+
+<title >Game Settings</title>
+
+<body style="background-color:Black;">
+
+<center><h1 style="color:Cyan;">Game Settings</center></h1>
+<center><font size="2" color="Cyan" font face="Lucida Console"
+<p><b>(Values will be set to default if nothing is entered)</b></center></p>
+<form action="Game1.html" method="get" target="_blank">
+
+  <label for="speed">
+  <font size="4" color="Cyan" font face="Lucida Console">How <b>fast</b> should the T-rex be?:</label>  
+  <input style="background-color: Cyan; border-color: Black; color: Black;" type="number" id="pd" name="pd" min="1" max="100">(Enter values from 1-100. Lower numbers = slow speed.)<br><br>
+  
+  <label for="acceleration">
+  <font size="4" color="Cyan" font face="Lucida Console">How much should the game canvas <b>Accelerate</b>?:</label>
+  <input style="background-color: Cyan; border-color: Black; color: Black;" type="number" id="cc" name="cc" min="1" max="100">(Enter values from 1-100. Lower numbers = slow acceleration)<br><br>
+  
+  <label for="clear_time">
+  <font size="4" color="Cyan" font face="Lucida Console">When should the <b>first cactus</b> appear?</b>:</label>
+  <input style="background-color: Cyan; border-color: Black; color: Black;" type="number" id="clrt" name="clrt" min="1" max="200">(Enter values from 1-200. Higher numbers = longer time.)<br><br>
+ 
+ 
+  <label for="score">
+  <font size="4" color="Cyan" font face="Lucida Console">How fast should the <b>score</b> be? :</label>
+  <select style="background-color: Cyan; border-color: Black; color: Black;" id="scr" name="scr">
+  <option style="background-color: Cyan;" value="16.666666666666668">Normal</option> 
+  <option style="background-color: Cyan;" value=".1">Medium</option>
+  <option style="background-color: Cyan;" value=".01">Fast</option>
+  </select><br><br> 
+  
+  <label for="auto">
+  <font size="4" color="Cyan" font face="Lucida Console">Do you want <b>500,000</b> points? :</label>
+  <select style="background-color: Cyan; border-color: Black; color: Black;" id="out" name="out"> 
+  <option style="background-color: Cyan;" value="0">No</option>
+  <option style="background-color: Cyan;" value="99999900">Yes</option>
+  </select><br><br>
+  
+  <label for="retry">
+  <font size="4" color="Cyan" font face="Lucida Console">Do you want an <b>automatic</b> restart? :</label>
+  <select style="background-color: Cyan; border-color: Black; color: Black;" id="try" name="try"> 
+  <option style="background-color: Cyan;" value="2">No</option>
+  <option style="background-color: Cyan;" value="1">Yes</option>
+  </select><br><br>
+  
+<label for="glitch">
+  <font size="4" color="Cyan" font face="Lucida Console">Do you want to <b>glitch</b> the game? :</label>
+  <select style="background-color: Cyan; border-color: Black; color: Black;" id="gli" name="gli"> 
+  <option style="background-color: Cyan;" value="2">No</option>
+  <option style="background-color: Cyan;" value="1">Yes</option>
+  </select><br><br>
+
+  <label for="inv">
+  <font size="4" color="Cyan" font face="Lucida Console">Do you want to be <b>invincible?</b> :</label>  
+  <select style="background-color: Cyan; border-color: Black; color: Black;" id="ivc" name="ivc">
+  <option style="background-color: Cyan;" value="2">No</option>
+  <option style="background-color: Cyan;" value="1">Yes</option>
+  </select><br><br>
+
+  <label for="still">
+  <font size="4" color="Cyan" font face="Lucida Console">Do you want to sit <b>still?</b> :</label>
+  <select style="background-color: Cyan; border-color: Black; color: Black;" id="sit" name="sit">
+  <option style="background-color: Cyan;" value="2">No</option>
+  <option style="background-color: Cyan;" value="1">Yes</option>
+  </select><br><br>
+  
+  <label for="bot">
+  <font size="4" color="Cyan" font face="Lucida Console">Do you want to activate the <b>Bot?</b> :</label>  
+  <select style="background-color: Cyan; border-color: Black; color: Black;" id="XD" name="XD">
+  <option style="background-color: Cyan;" value="2"<disabled>No</option></disabled>
+  <option style="background-color: Cyan;" value="1"<disabled>Yes</option></disabled>
+  </select><br><br>
+  
+  <label for="backward">
+  <font size="4" color="Cyan" font face="Lucida Console">Do you want to go <b>backwards</b> when you hit an obstacle? :</label>  
+  <select style="background-color: Cyan; border-color: Black; color: Black;" id="bax" name="bax">
+  <option style="background-color: Cyan;" value="2">No</option>
+  <option style="background-color: Cyan;" value="1">Yes</option>
+  </select><br><br>
+
+  <p>
+  <font size="4" color="Cyan" font face="Lucida Console"><b>(Disclaimer: THE FOLLOWING SETTINGS WILL NOT WORK WITH MOBILE USERS!)</b>
+  </p>
+  
+  <label for="gamb">
+  <font size="4" color="Cyan" font face="Lucida Console">Do you want to gamble with the <b>L key?</b> :</label>  
+  <select style="background-color: Cyan; border-color: Black; color: Black;" id="L" name="L">
+  <option style="background-color: Cyan;" value="2">No</option>
+  <option style="background-color: Cyan;" value="1">Yes</option>
+  </select><br><br>
+
+  <label for="WASD">
+  <font size="4" color="Cyan" font face="Lucida Console">Do you want to <b> manually </b>increase your score? (use WASD keys) :</label>   
+  <select style="background-color: Cyan; border-color: Black; color: Black;" id="man" name="man">
+  <option style="background-color: Cyan;" value="2">No</option>
+  <option style="background-color: Cyan;" value="1">Yes</option>
+  </select><br><br>
+
+  <label for="done">
+  <font size="4" color="Cyan" font face="Lucida Console">Do you want to <b> delete</b> objects? (use "G" key.) :</label>   
+  <select style="background-color: Cyan; border-color: Black; color: Black;" id="man" name="man">
+  <option style="background-color: Cyan;" value="2">No</option>
+  <option style="background-color: Cyan;" value="1">Yes</option>
+  </select><br><br>
+
+  
+  <label for="arrow">
+  <font size="4" color="Cyan" font face="Lucida Console">Do you want to <b> move </b>left and right? :</label>   
+  <select style="background-color: Cyan; border-color: Black; color: Black;" id="key" name="key">
+  <option style="background-color: Cyan;" value="2">No</option>
+  <option style="background-color: Cyan;" value="1">Yes</option>
+  </select><br><br>
+  
+  <center><input type="submit" style="background-color: Cyan; border-color: Black; color: Black" value="Play!"></center>
+  
+  <form>
+         
+      </form>
+  
+</form>
+
+<div id="container">
+        <button type="submit"  style="background-color: Black; border-color: Black; color: Black" formaction="codes.html"><font size="4" color="Cyan" font face="Lucida Console">Made By <b>Magnus Marks</b></button>
+</div>
+
+<script>
+
+console.log("	  _______      _________      _____       ______     _\n     / _____ \\    |____ ____|    / ___ \\     | ____ \\   | |\n    / /     \\_\\       | |       / /   \\ \\    | |   \\ \\  | |\n    | |               | |      / /     \\ \\   | |   | |  | |\n    \\ \\______         | |      | |     | |   | |___/ /  | |\n     \\______ \\        | |      | |     | |   |  ____/   | |\n            \\ \\       | |      | |     | |   | |        | |\n     _      | |       | |      \\ \\     / /   | |        |_|\n    \\ \\_____/ /       | |       \\ \\___/ /    | |         _\n     \\_______/        |_|        \\_____/     |_|        |_|\n\n     May you explain why you are you trying to modify the code of this website?");
+
+</script>
+
+<script>
+
+console.log("I do not understand what your objective may be, carry on, User 626.");
+
+</script>
+
+</body>
+</html>

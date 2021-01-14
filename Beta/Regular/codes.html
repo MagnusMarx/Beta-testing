@@ -1,0 +1,173 @@
+<p>
+Congrats! You found the hidden page! You can enter in these codes below in any dino game.
+</p>
+<p>
+Codes:
+</p>
+<p>
+Bot:
+</p>
+<p>
+(1)= function keyDown(e){Podium={};var n=document.createEvent("KeyboardEvent");Object.defineProperty(n,"keyCode",{get:function(){return this.keyCodeVal}}),n.initKeyboardEvent?n.initKeyboardEvent("keydown",!0,!0,document.defaultView,e,e,"","",!1,""):n.initKeyEvent("keydown",!0,!0,document.defaultView,!1,!1,!1,!1,e,0),n.keyCodeVal=e,document.body.dispatchEvent(n)}function keyUp(e){Podium={};var n=document.createEvent("KeyboardEvent");Object.defineProperty(n,"keyCode",{get:function(){return this.keyCodeVal}}),n.initKeyboardEvent?n.initKeyboardEvent("keyup",!0,!0,document.defaultView,e,e,"","",!1,""):n.initKeyEvent("keyup",!0,!0,document.defaultView,!1,!1,!1,!1,e,0),n.keyCodeVal=e,document.body.dispatchEvent(n)}setInterval(function(){Runner.instance_.horizon.obstacles.length>0&&(Runner.instance_.horizon.obstacles[0].xPos<25*Runner.instance_.currentSpeed-Runner.instance_.horizon.obstacles[0].width/2&&Runner.instance_.horizon.obstacles[0].yPos>75&&(keyUp(40),keyDown(38)),Runner.instance_.horizon.obstacles[0].xPos<30*Runner.instance_.currentSpeed-Runner.instance_.horizon.obstacles[0].width/2&&Runner.instance_.horizon.obstacles[0].yPos<=75&&keyDown(40))},5);
+</p>
+<p>
+(2)= setInterval(function(){ Runner.instance_.horizon.obstacleHistory.length = 1; }, 1);Runner.instance_.horizon.duplicateObstacleCheck = function (i){bounce(); for(var s=0,e=0;e<this.obstacleHistory.length;e++)s=this.obstacleHistory[e]==i?s+1:0;return s>=this.config.MAX_OBSTACLE_DUPLICATION}
+</p>
+<p>
+(3)=setInterval(function(){if(Runner.instance_.currentSpeed <= 11){setInterval(function(){ Runner.instance_.horizon.obstacleHistory.length = 1; }, 1); setInterval(function(){if(Runner.instance_.horizon.obstacles["0"].xPos<=152){sendit();};}, 1); function sendit() {if(Runner.instance_.horizon.obstacles["0"].yPos==50){} else if(Runner.instance_.horizon.obstacles["0"].yPos==75){ Runner.instance_.tRex.update(0, Runner.instance_.tRex.status.DUCKING); Runner.instance_.tRex.ducking = true;} else{ Runner.instance_.tRex.startJump(10);}};} else{setInterval(function(){Runner.instance_.horizon.obstacles.__proto__ = 0;}, 3000); setInterval(function(){ Runner.instance_.horizon.obstacleHistory.length = 1; }, 1); setInterval(function(){if(Runner.instance_.horizon.obstacles["0"].xPos<=270){sendit();};}, 1); function sendit() {if(Runner.instance_.horizon.obstacles["0"].yPos==50){} else if(Runner.instance_.horizon.obstacles["0"].yPos==75){ Runner.instance_.tRex.update(0, Runner.instance_.tRex.status.DUCKING); Runner.instance_.tRex.ducking = true;} else if(Runner.instance_.currentSpeed>=11) {Runner.instance_.tRex.startJump(Runner.instance_.currentSpeed)}};};}, 1);
+
+setInterval(function(){if(Runner.instance_.tRex.status=="CRASHED"){Runner.instance_.restart()}}, 1);
+
+function bounce() {setTimeout(function(){ sendit();}, 1540 - Math.pow(Runner.instance_.currentSpeed, 2.989))}
+
+function sendit() {if(Runner.instance_.horizon.obstacleHistory=="PTERODACTYL"){setTimeout(function(){Runner.instance_.tRex.setDuck(2)}, 100);; setTimeout(function(){ Runner.instance_.tRex.startJump(12.1); }, 270);}else{Runner.instance_.tRex.startJump(12.1);}}
+</p>
+
+
+<p>
+Cool start up= Runner.instance_.setArcadeMode(true);
+</p>
+
+
+<p>
+Sit still= Runner.instance_.playingIntro = true;
+</p>
+
+
+<p>
+Invincible mode:
+</p>
+<p>
+(1)= Runner.instance_.gameOver = function(){};
+</p>
+<p>
+(2)= Runner.instance_.gameOver = function(){console.log("Hello")};
+</p>
+
+
+
+<p>
+Set Speed= Runner.instance_.setSpeed(number)
+</p>
+
+
+
+<p>
+Score Multiplier=
+</p>
+<p>
+Runner.instance_.msPerFrame=number
+</p>
+
+
+
+<p>
+Random Stuff:
+</p>
+<p>
+(1)= Runner.config.ACCELERATION = 10000
+</p>
+<p>
+(2)= Runner.instance_.distanceRan = 99999900
+</p>
+<p>
+(3)= setInterval(function(){if(Runner.instance_.tRex.status=="CRASHED"){Runner.instance_.restart()}}, 1);
+</p>
+<p>
+(4)= Runner.instance_.currentSpeed = 1000000
+</p>
+
+
+
+<p>
+Gambling L=
+</p>
+<p>
+window.addEventListener("keydown", checkKeyPressed, false); function checkKeyPressed(l) { if (l.keyCode == "76" ) {var rand = Math.floor(Math.random()* 5); if (rand==0){Runner.instance_.gameOver() } else {Runner.instance_.distanceRan = Runner.instance_.distanceRan - -40000};}}; 
+</p>
+
+
+
+<p>
+Move objects up/down (t/g)=
+</p>
+<p>
+window.addEventListener("keydown", checkKeyPressed, false); function checkKeyPressed(g) { if (g.keyCode == "71" ) {Runner.instance_.horizon.obstacles["0", "1"].yPos = Runner.instance_.horizon.obstacles["0", "1"].yPos- -5;}}; window.addEventListener("keydown", checkKeyPressed, false); function checkKeyPressed(t) { if (t.keyCode == "84" ) {Runner.instance_.horizon.obstacles["0", "1"].yPos = Runner.instance_.horizon.obstacles["0", "1"].yPos-5;}};
+</p>
+
+
+<p>
+Move left/right with arrow keys=
+</p>
+<p>
+window.addEventListener("keydown", checkKeyPressed, false);
+function checkKeyPressed(e) {
+  if (e.keyCode == "37" && Runner.instance_.tRex.xPos>>4) {
+  Runner.instance_.tRex.xPos = Runner.instance_.tRex.xPos - 5;}}
+window.addEventListener("keydown", checkKeyPressed1, false); function checkKeyPressed1(f) {
+  if (f.keyCode == "39" && Runner.instance_.tRex.xPos<=553) {
+  Runner.instance_.tRex.xPos = Runner.instance_.tRex.xPos - -5;}};
+</p>
+
+
+
+
+<p>
+Increase your score and other stuff with WASD=
+</p>
+<p>
+window.addEventListener("keydown", W, false);
+function W(w) {
+  if (w.keyCode == "87") {
+Runner.instance_.distanceRan = Runner.instance_.distanceRan + 499
+
+}
+
+}
+
+window.addEventListener("keydown", a, false);
+function a(A) {
+  if (A.keyCode == "65" && Runner.instance_.tRex.config.GRAVITY > 0.2) {
+Runner.instance_.tRex.config.INIITAL_JUMP_VELOCITY = Runner.instance_.tRex.config.INIITAL_JUMP_VELOCITY - 1;
+
+Runner.instance_.tRex.config.GRAVITY = Runner.instance_.tRex.config.GRAVITY- 0.1;
+
+}}
+window.addEventListener("keydown", d, false);
+function d(D) {
+  if (D.keyCode == "68" && Runner.instance_.tRex.config.GRAVITY < 1) {
+Runner.instance_.tRex.config.INIITAL_JUMP_VELOCITY = Runner.instance_.tRex.config.INIITAL_JUMP_VELOCITY - -1;
+
+Runner.instance_.tRex.config.GRAVITY = Runner.instance_.tRex.config.GRAVITY-  -0.1;
+
+}};
+</p>
+<p>
+DELETE OBSTACLES
+</p>
+<p>
+window.addEventListener("keydown", checkKeyPressed12, false); function checkKeyPressed12(g) {
+  if (g.keyCode == "71") {
+  Runner.instance_.horizon.removeFirstObstacle();}};
+</p>
+<p>
+GO BACKWARDS WHEN HIT OBSTACLE
+</p>
+<p>	
+Runner.isBumped=0;Runner.prototype.gameOver=function(){if(Runner.isBumped==0){Runner.isBumped=1;window.setTimeout(function(){this.setSpeed(-this.currentSpeed);Runner.isBumped=0;},250);this.setSpeed(-this.currentSpeed);}};
+</p>
+<p>
+GLITCH THE GAME
+</p>
+<p>
+Runner.instance_.updateConfigSetting('ACCELERATION','0');Runner.instance_.updateConfigSetting('BG_CLOUD_SPEED','1');Runner.instance_.updateConfigSetting('CLOUD_FREQUENCY','100');Runner.instance_.updateConfigSetting('GRAVITY','1000');Runner.instance_.updateConfigSetting('INITIAL_JUMP_VELOCITY','0.1');Runner.instance_.updateConfigSetting('INVERT_DISTANCE','-1');Runner.instance_.updateConfigSetting('INVERT_FADE_DURATION',window.Infinity);Runner.instance_.updateConfigSetting('MAX_BLINK_COUNT','0');Runner.instance_.updateConfigSetting('MAX_CLOUDS','0');Runner.instance_.updateConfigSetting('MAX_OBSTACLE_DUPLICATION','5');Runner.instance_.updateConfigSetting('MAX_OBSTACLE_LENGTH','5');Runner.instance_.updateConfigSetting('MAX_SPEED','500');Runner.instance_.updateConfigSetting('MIN_JUMP_HEIGHT','0');Runner.instance_.updateConfigSetting('SPEED','500');Runner.instance_.updateConfigSetting('SPEED_DROP_COEFFICIENT','0.3');Runner.prototype.gameOver=function(){this.playingIntro=Math.floor(Math.random());this.playSound(this.soundFx.BUTTON_PRESS);this.playSound(this.soundFx.HIT);this.playSound(this.soundFx.SCORE);};Runner.instance_.distanceMeter.config.FLASH_DURATION=1;Runner.instance_.distanceMeter.config.FLASH_ITERATIONS=50;Runner.instance_.distanceMeter.config.ACHIEVEMENT_DISTANCE=1;setInterval(function(){Runner.instance_.gameOver();Runner.instance_.onKeyDown({keyCode:32,which:32,charCode:32,preventDefault:function(){}});Runner.instance_.distanceMeter.digits=(Math.random()*999999).toString().split('');},50);
+</p>
+<p>
+MAKE WARNINGS IN THE DEV CONSOLE
+</p>
+<p>
+console.error("	  _______      _________      _____       ______     _\n     / _____ \\    |____ ____|    / ___ \\     | ____ \\   | |\n    / /     \\_\\       | |       / /   \\ \\    | |   \\ \\  | |\n    | |               | |      / /     \\ \\   | |   | |  | |\n    \\ \\______         | |      | |     | |   | |___/ /  | |\n     \\______ \\        | |      | |     | |   |  ____/   | |\n            \\ \\       | |      | |     | |   | |        | |\n     _      | |       | |      \\ \\     / /   | |        |_|\n    \\ \\_____/ /       | |       \\ \\___/ /    | |         _\n     \\_______/        |_|        \\_____/     |_|        |_|\n\n     May you explain why you are you trying to modify the code of this website?");
+
+
+console.warn("I do not understand what your objective may be, carry on, User 626.");:</label>
+</p>
